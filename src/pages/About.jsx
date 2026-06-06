@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section className="about">
       <div className="about-image">
-        <img src="/profile-placeholder.svg" alt="Branden Frady" />
+        <img src="/WIN_20260424_12_24_54_Pro.jpg" alt="Branden Frady" />
       </div>
       <div className="about-content">
         <h1>About Me</h1>
