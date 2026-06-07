@@ -33,7 +33,7 @@ docker build -t dvop400-finalproject:local .
 
 Run locally:
 ```bash
-docker run --rm -p 8080:80 dvop400-finalproject:local
+docker run --rm -p 8080:8080 dvop400-finalproject:local
 ```
 
 Then open http://localhost:8080

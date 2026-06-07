@@ -13,7 +13,7 @@ docker pull brandenp88/dvop400-finalproject:latest
 
 ## Run the Container
 ```bash
-docker run --rm -p 8080:80 brandenp88/dvop400-finalproject:latest
+docker run --rm -p 8080:8080 brandenp88/dvop400-finalproject:latest
 ```
 
 ## View in Browser
