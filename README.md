@@ -2,7 +2,9 @@
 Personal website for the DVOP 400 final project, built as a multi-page React app and published as a Docker image via GitHub Actions.
 
 ## What is included
-- Multi-page site with Home, About Me, and Resume pages
+- Multi-page site with Home, About, Resume, Projects, Skills, and Contact pages
+- Clickable Skills glossary with explanations for Cloud, DevOps, and Automation technologies
+- Profile image and cleaned-up portfolio layout for a more readable resume presentation
 - React + Vite + React Router SPA
 - Dockerfile for production build served by Nginx
 - GitHub Actions workflow to build and push a multi-platform image to Docker Hub
@@ -62,9 +64,10 @@ The workflow builds and publishes a multi-platform Docker image to Docker Hub.
 
 ## Repo structure
 - src/: React source
+- src/data/profile.js: portfolio content, resume data, skills, and clickable skill explanations
 - public/: static assets
 - Dockerfile: container build
 - deployment.md: Docker run instructions and PR link
 
 ## Notes
-- Replace public/profile-placeholder.svg with a real photo when available.
+- The app uses hash routes for static hosting, such as http://localhost:8080/#/skills.
