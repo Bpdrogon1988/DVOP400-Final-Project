@@ -1,35 +1,48 @@
+import { Link } from "react-router-dom";
+import { highlights, profile, targetRoles } from "../data/profile.js";
+
 export default function Home() {
   return (
-    <section className="hero">
-      <div className="hero-content">
-        <p className="eyebrow">Welcome</p>
-        <h1>
-          Building cloud-ready platforms, automation pipelines, and resilient
-          infrastructure.
-        </h1>
-        <p className="lead">
-          This site highlights my Cloud DevOps background, hands-on lab work,
-          and the project portfolio I am building across AWS, Linux, Docker,
-          and GitHub Actions.
-        </p>
-        <div className="cta-group">
-          <a className="btn primary" href="/resume">
-            View Resume
-          </a>
-          <a className="btn ghost" href="/about">
-            About Me
-          </a>
+    <section className="stack">
+      <div className="hero">
+        <div className="hero-copy">
+          <p className="eyebrow">Cloud DevOps Portfolio</p>
+          <h1>Building reliable cloud infrastructure with automation and security in mind.</h1>
+          <p className="lead">{profile.summary}</p>
+          <div className="cta-group">
+            <Link className="btn primary" to="/projects">View Projects</Link>
+            <Link className="btn secondary" to="/resume">Resume</Link>
+          </div>
         </div>
+        <aside className="profile-panel" aria-label="Profile summary">
+          <img src={profile.photo} alt={profile.name} />
+          <div>
+            <p className="panel-name">{profile.name}</p>
+            <p>{profile.location}</p>
+          </div>
+        </aside>
       </div>
-      <div className="hero-card">
-        <h2>Focus Areas</h2>
-        <ul>
-          <li>Cloud architecture and networking labs</li>
-          <li>CI/CD automation with Docker and GitHub Actions</li>
-          <li>Security-focused infrastructure engineering</li>
-          <li>Modern DevOps tooling and IaC practices</li>
-        </ul>
-      </div>
+
+      <section className="section-grid">
+        <div className="section-intro">
+          <p className="eyebrow">Overview</p>
+          <h2>Clear strengths for cloud support, infrastructure, and junior DevOps roles.</h2>
+        </div>
+        <div className="feature-list">
+          {highlights.map((item) => (
+            <article className="feature-row" key={item}>
+              <span />
+              <p>{item}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="role-strip" aria-label="Target roles">
+        {targetRoles.map((role) => (
+          <span key={role}>{role}</span>
+        ))}
+      </section>
     </section>
   );
 }
