@@ -13,11 +13,19 @@ docker pull brandenp88/dvop400-finalproject:latest
 
 ## Run the Container
 ```bash
-docker run --rm -p 8080:8080 brandenp88/dvop400-finalproject:latest
+docker rm -f dvop400-finalproject
+docker run -d --name dvop400-finalproject -p 8080:8080 brandenp88/dvop400-finalproject:latest
 ```
 
 ## View in Browser
-Open: http://localhost:8080
+Open: http://localhost:8080/#/
+
+## Troubleshooting
+If port 8080 is already in use, stop the old container and start this one again:
+```bash
+docker rm -f dvop400-finalproject
+docker run -d --name dvop400-finalproject -p 8080:8080 brandenp88/dvop400-finalproject:latest
+```
 
 ## Notes
 - Windows and macOS users should run Docker Desktop with Linux containers enabled.

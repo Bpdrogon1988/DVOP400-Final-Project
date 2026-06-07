@@ -33,10 +33,23 @@ docker build -t dvop400-finalproject:local .
 
 Run locally:
 ```bash
-docker run --rm -p 8080:8080 dvop400-finalproject:local
+docker rm -f dvop400-finalproject
+docker run -d --name dvop400-finalproject -p 8080:8080 dvop400-finalproject:local
 ```
 
-Then open http://localhost:8080
+Then open http://localhost:8080/#/
+
+Run the published Docker Hub image:
+```bash
+docker rm -f dvop400-finalproject
+docker pull brandenp88/dvop400-finalproject:latest
+docker run -d --name dvop400-finalproject -p 8080:8080 brandenp88/dvop400-finalproject:latest
+```
+
+Check that it is running:
+```bash
+docker ps --filter name=dvop400-finalproject
+```
 
 ## CI/CD (GitHub Actions)
 Workflow file: .github/workflows/docker-publish.yml
