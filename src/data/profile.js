@@ -57,19 +57,130 @@ export const securityProjects = [
 export const skillGroups = [
   {
     title: "Cloud",
-    items: ["AWS EC2", "S3", "IAM", "VPC", "ECS/ECR", "RDS", "Lambda", "SNS/SQS", "CloudFormation", "CodePipeline", "Azure"],
+    items: [
+      {
+        name: "AWS EC2",
+        description: "Virtual Linux or Windows servers in AWS used to host applications, lab workloads, and infrastructure services.",
+      },
+      {
+        name: "S3",
+        description: "AWS object storage used for static websites, artifacts, backups, logs, and durable file storage.",
+      },
+      {
+        name: "IAM",
+        description: "AWS identity and access management for users, roles, permissions, and least-privilege access control.",
+      },
+      {
+        name: "VPC",
+        description: "Private AWS networking for subnets, route tables, security groups, NAT, bastion access, and traffic isolation.",
+      },
+      {
+        name: "ECS/ECR",
+        description: "AWS container services for storing Docker images in ECR and running containerized workloads in ECS.",
+      },
+      {
+        name: "RDS",
+        description: "Managed AWS relational databases used for reliable backend data storage without manually administering database servers.",
+      },
+      {
+        name: "Lambda",
+        description: "Serverless AWS functions used to run event-driven automation without managing a full server.",
+      },
+      {
+        name: "SNS/SQS",
+        description: "AWS messaging services used to decouple systems with queues, notifications, and event-driven workflows.",
+      },
+      {
+        name: "CloudFormation",
+        description: "AWS infrastructure-as-code templates for repeatable cloud deployments and consistent resource creation.",
+      },
+      {
+        name: "CodePipeline",
+        description: "AWS CI/CD service for automating build, test, and deployment workflows.",
+      },
+      {
+        name: "Azure",
+        description: "Microsoft cloud platform used for fundamentals, administration coursework, and Azure DevOps pipeline practice.",
+      },
+    ],
   },
   {
     title: "DevOps",
-    items: ["Docker", "Docker Compose", "Git", "GitHub", "GitHub Actions", "CI/CD", "Kubernetes", "Argo CD", "Minikube"],
+    items: [
+      {
+        name: "Docker",
+        description: "Container platform used to package applications with their runtime so they build and run consistently.",
+      },
+      {
+        name: "Docker Compose",
+        description: "Tool for running multi-container local environments, such as an app with a database, Redis, or gateway service.",
+      },
+      {
+        name: "Git",
+        description: "Version control used to track code changes, branch safely, and collaborate on project history.",
+      },
+      {
+        name: "GitHub",
+        description: "Source hosting platform used for repositories, pull requests, project publishing, and portfolio delivery.",
+      },
+      {
+        name: "GitHub Actions",
+        description: "Workflow automation used to build, test, scan, and publish application containers from the repository.",
+      },
+      {
+        name: "CI/CD",
+        description: "Continuous integration and delivery practices that automate testing, packaging, and deployment steps.",
+      },
+      {
+        name: "Kubernetes",
+        description: "Container orchestration platform for running, scaling, and managing containerized services.",
+      },
+      {
+        name: "Argo CD",
+        description: "GitOps deployment tool that keeps Kubernetes environments aligned with configuration stored in Git.",
+      },
+      {
+        name: "Minikube",
+        description: "Local Kubernetes environment used for learning, testing, and practicing cluster workflows on one machine.",
+      },
+    ],
   },
   {
     title: "Automation",
-    items: ["Terraform", "CloudFormation", "Ansible", "Pulumi concepts", "Bash", "PowerShell"],
+    items: [
+      {
+        name: "Terraform",
+        description: "Infrastructure-as-code tool used to define, plan, and deploy cloud resources across providers.",
+      },
+      {
+        name: "CloudFormation",
+        description: "AWS-native automation for defining cloud resources as templates and deploying them repeatably.",
+      },
+      {
+        name: "Ansible",
+        description: "Configuration automation tool used to install packages, configure systems, and standardize server setup.",
+      },
+      {
+        name: "Pulumi concepts",
+        description: "Infrastructure-as-code approach that uses general-purpose programming languages to define cloud resources.",
+      },
+      {
+        name: "Bash",
+        description: "Linux shell scripting used for repeatable command-line automation, setup tasks, and troubleshooting.",
+      },
+      {
+        name: "PowerShell",
+        description: "Windows and cross-platform scripting used for administrative automation and system management.",
+      },
+      {
+        name: "SELinux",
+        description: "Linux mandatory access control used to restrict what processes can access, even when normal permissions allow it.",
+      },
+    ],
   },
   {
     title: "Systems",
-    items: ["Ubuntu", "Fedora", "WSL2", "systemd", "firewalld", "SELinux basics", "Apache", "NGINX", "Windows Server", "AD DS coursework"],
+    items: ["Ubuntu", "Fedora", "WSL2", "systemd", "firewalld", "SELinux", "Apache", "NGINX", "Windows Server", "AD DS coursework"],
   },
   {
     title: "Networking",

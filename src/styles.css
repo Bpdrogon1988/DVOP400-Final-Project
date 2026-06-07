@@ -310,6 +310,46 @@ h2 {
   font-weight: 700;
 }
 
+.tag-list li.skill-tag {
+  align-items: stretch;
+}
+
+.tag-list li.skill-tag.interactive {
+  display: grid;
+  gap: 8px;
+  flex: 1 1 220px;
+  padding: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.skill-button {
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--surface-soft);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  text-align: left;
+}
+
+.skill-button:hover,
+.skill-button.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.skill-description {
+  padding: 0 12px 12px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
 .split {
   display: grid;
   grid-template-columns: minmax(260px, 360px) 1fr;
