@@ -20,8 +20,9 @@ Personal website for the DVOP 400 final project, built as a multi-page React app
 Build locally:
 ```bash
 git clone https://github.com/bpdrogon1988/DVOP400-Final-Project.git
+
 cd DVOP400-Final-Project
-4. Switch to your develop branch (since your GitHub screenshot shows your recent commits are there):
+4. Switch to your develop branch
 PowerShell
 git checkout develop
 5. Run your Docker build command again:
