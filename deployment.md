@@ -1,5 +1,3 @@
-PR URL: https://github.com/Bpdrogon1988/DVOP400-Final-Project/pull/REPLACE_ME
-
 # Deployment Instructions
 
 ## Docker Hub Image
