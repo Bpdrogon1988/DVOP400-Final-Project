@@ -16,22 +16,17 @@ Personal website for the DVOP 400 final project, built as a multi-page React app
 - Docker + Nginx
 - GitHub Actions (docker/build-push-action with buildx)
 
-## Run locally
-```bash
-npm install
-npm run dev
-```
-
-## Build production bundle
-```bash
-npm run build
-```
-
 ## Docker
 Build locally:
 ```bash
+git clone https://github.com/bpdrogon1988/DVOP400-Final-Project.git
+cd DVOP400-Final-Project
+4. Switch to your develop branch (since your GitHub screenshot shows your recent commits are there):
+PowerShell
+git checkout develop
+5. Run your Docker build command again:
+PowerShell
 docker build -t dvop400-finalproject:local .
-```
 
 Run locally:
 ```bash
