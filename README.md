@@ -39,8 +39,8 @@ Then open http://localhost:8080/#/
 
 Run the published Docker Hub image:
 ```bash
-docker rm -f dvop400-finalproject
 docker pull brandenp88/dvop400-finalproject:latest
+docker rm -f dvop400-finalproject
 docker run -d --name dvop400-finalproject -p 8080:8080 brandenp88/dvop400-finalproject:latest
 ```
 
